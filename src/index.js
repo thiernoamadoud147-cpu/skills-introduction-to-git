@@ -53,6 +53,10 @@ function init() {
   patternCanvas = document.getElementById("patternCanvas");
   patternCtx = patternCanvas.getContext("2d");
 
+  // Load high score from localStorage
+  highScore = parseInt(localStorage.getItem("stackOverflownHighScore")) || 0;
+  document.getElementById("high-score").textContent = highScore;
+
   // Initialize empty board
   board = Array(ROWS)
     .fill(null)
