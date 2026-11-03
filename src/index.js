@@ -45,6 +45,8 @@ let dropInterval = 1000;
 let lastTime = 0;
 let targetPattern = null;
 let highScore = 0;
+let level = 1;
+let patternsCleared = 0;
 
 // Initialize game
 function init() {
